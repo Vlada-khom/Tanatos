@@ -1,0 +1,157 @@
+@import "_variables";
+@import "_service";
+@import "_letter";
+@import "_team";
+
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+html {
+    font-size: 16px;  
+} 
+@media (min-width: 320px) and (max-width: 992px) {
+        html {
+            font-size: 18px;
+    }
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;    
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+        
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1200px;
+        
+    }
+}
+
+.slider {
+    background: linear-gradient(to top, rgba(69, 75, 83, 0.9), rgba(69, 75, 83, 0.9)), url(../img/slider/bg.png);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    padding-top: 7px;
+    justify-content: space-between;
+  
+    &__menu {
+        @include font("oSans-reg", 16, white);
+        cursor: pointer;
+    }
+
+    @media (min-width: 576px) {
+        padding-top: 15px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 20px;
+    }
+
+    @media (min-width: 992px) {
+        padding-top: 40px; 
+    }
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+        padding: 0 5px;
+        margin-top: 160px;
+    }
+
+    &__main {
+        &_white {
+            @include font("oSana-bold", 30, white);
+
+            @media (min-width: 992px) {
+               @include font("oSana-bold", 70, white); 
+            }
+        }
+        &_orange {
+            @include font("oSans-bold", 30, $orange);
+
+            @media (min-width: 992px) {
+                @include font("oSans-bold", 70, $orange);
+            }
+        }
+    }
+    &__bottom {
+        @include font("oSans-reg", 18, white);
+        @media (min-width: 992px) {
+            @include font("oSans-reg", 25, white);
+        }
+    }
+   
+}
+.slider-btn {
+    text-align: center;
+    margin-bottom: 90px;
+    @media (min-width: 922px) {
+        margin-bottom: 150px;
+    }
+
+}
+
+.button {
+    display: inline-block;
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    &_hire {
+        @include font("oSans-semi", 16, white);
+        background: $orange;
+    }
+    &_work {
+        @include font("oSans-semi", 16, white);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 15px;
+        @media (min-width:576px) {
+            margin-left: 25px;
+
+        }
+    }
+}
+
+
+.circle {
+    text-align: center;
+    &_arrow {
+        transition: animation .3s;
+        animation: down 3s linear forwards ;
+        &:hover {
+            cursor: pointer;
+
+            
+        }
+    }
+}

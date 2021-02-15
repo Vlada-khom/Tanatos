@@ -1,0 +1,17 @@
+@keyframes down {
+    from { transform: translateY(0);}
+    35% { transform: translateY(-20px);}
+    70% { transform: translateY(20px);}
+    to { transform: translateY(-20px);}
+}
+
+@mixin font($family, $size, $color) {
+    font-family: $family;
+    font-size: $size/16 + rem;
+    color: $color;
+}
+
+$grey: rgba(126, 130, 134, 1.0);
+$orange: rgba(247, 96, 14, 1.0);
+$t-grey: rgba(59, 67, 76, 1.0);
+

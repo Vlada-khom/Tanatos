@@ -1,0 +1,89 @@
+.title-team {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+        padding: 0 5px;
+        margin-top: 95px;
+        margin-bottom: 110px;
+    }
+
+    &__main {
+        &_white {
+            @include font("oSans-semi", 30, $t-grey);
+        }
+        &_orange {
+            @include font("oSans-semi", 30, $orange);  
+        }
+    }
+    &__text {
+        @include font("oSans-reg", 16, $t-grey);
+        
+    }
+   
+}
+.portrets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 21%;
+        filter: grayscale(1);
+        
+        &:hover {
+            cursor: pointer;
+            filter: none;
+        }
+        &:hover .portrets__foto {
+            transform: scaleY(1.05);
+            transform-origin: bottom;
+            border-bottom: 4px solid $orange;
+            transition: transform .5s;
+        }
+    }
+    &__foto {
+        width: 235px;
+        height: 284px;
+        overflow: hidden;
+        border-radius: 10px;
+        border-bottom: 4px solid transparent;
+    }
+    &__description {
+        text-align: center;
+        @include font("oSans-reg", 14,$grey);
+        padding-bottom: 30px;
+    }
+    &__name {
+        @include font("oSans-semi", 25,$grey);
+        text-align: center;
+    }
+    &__sprites {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
+.carousel-control {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    &__item {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $grey;
+        margin-right: 20px;
+
+        &_active {
+            width: 18px;
+            height: 18px;
+            background: $orange;
+        }
+    }
+}

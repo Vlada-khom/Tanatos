@@ -1,0 +1,41 @@
+.letter {
+    background: linear-gradient(to top, rgba(69, 75, 83, 0.9), rgba(69, 75, 83, 0.9)), url(../img/list/bgmail.png);
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    &__mail {
+        width: 80%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        height: 50px;
+        @include font("oSans-light", 16,$grey);
+        border-radius: 10px;
+        border: none;
+        padding: 0 24px;
+        @media (min-width: 768px){
+            width: 65%;
+            box-sizing: border-box;   
+        }
+        @media (min-width: 992px) {
+            width: 560px;
+        }
+    }
+    &__submit {
+        width: 80%;
+        height: 50px;
+        background-color: $orange;
+        @include font("oSans-semi", 16,white);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        @media (min-width: 768px) {
+            width: 30%;
+            margin-left: 10px;
+        }
+        @media (min-width: 992px) {
+            width: 270px;
+            margin-left: 30px;  
+        }
+    }
+}
+

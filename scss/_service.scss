@@ -1,0 +1,58 @@
+.services {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 992px)  {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0 20px;
+        @media (min-width: 992px)  {
+            padding: 100px 0 110px;
+                
+        }
+    }
+    &__main {
+        margin: 25px 0;
+        @include font("oSana-semi", 16, $grey);
+    }
+
+    &__text {
+        text-align: center;
+        height: 70px;
+        line-height: 1.6;
+        @include font("oSana-reg", 14, $grey);
+        @media (min-width: 768px) {
+            width: 100%;
+            height: 80px;
+        }
+        @media (min-width: 992px)  {
+            width: 200px;
+        }
+    }
+    &__icon {
+        width: 130px;
+        height: 130px;
+        box-sizing: border-box;
+        border: 1px solid #7e8286;
+        border-radius: 50%;
+        padding: 35px;
+        text-align: center;
+        @media (min-width: 768px) {
+            width: 150px;
+            height: 150px;
+            padding: 47px;
+        }
+    }
+}
