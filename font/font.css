@@ -23,3 +23,7 @@
     src: local("OpenSans-Light"), url("OpenSans-Light.ttf");
     
 }
+@font-face {
+    font-family: "icon";
+    src: url("icofont/fonts/icofont.ttf");
+}

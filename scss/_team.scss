@@ -31,26 +31,34 @@
     &__box {
         display: flex;
         flex-direction: column;
-        flex-basis: 21%;
+        flex-basis: 235px;
         filter: grayscale(1);
         
         &:hover {
             cursor: pointer;
             filter: none;
         }
-        &:hover .portrets__foto {
-            transform: scaleY(1.05);
+        &:hover .portrets__img {
+            transform: scale(1.05);
             transform-origin: bottom;
             border-bottom: 4px solid $orange;
             transition: transform .5s;
         }
+        &:hover .portrets__fb {
+            opacity: 1.0;
+        }
+        &:hover .portrets__google {
+            opacity: 1.0;
+        }
+        
     }
-    &__foto {
+    &__img {
         width: 235px;
         height: 284px;
         overflow: hidden;
         border-radius: 10px;
         border-bottom: 4px solid transparent;
+        transition: .5s;
     }
     &__description {
         text-align: center;
@@ -64,6 +72,37 @@
     &__sprites {
         text-align: center;
         padding: 10px 0;
+        
+
+    }
+    &__fb {
+        font-family: "icon";
+        background-color: rgb(32, 91, 159);
+        text-decoration: none;
+        font-size: 21px;
+        color: white;
+        padding: 2px 4px;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+    &__twitter {
+        color: white;
+        border-radius: 50%;
+        background-color: rgb(0, 172, 227);
+        font-size: 19px;
+        padding: 5px 4px 2px;
+    }
+    &__google {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        background: red;
+        border-radius: 50%;
+        padding: 0 2px 1px;
+        opacity: 0.6;
+    }
+    &__border {
+        border-radius: 50%;
     }
 
 }
