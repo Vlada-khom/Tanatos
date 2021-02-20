@@ -10,16 +10,23 @@
     <title>Tanatos</title>
 </head>
 <body>
-    <div class="slider">
+    <div class="slider" id="slider">
         <div class="container">
             <div class="header">
                     <div class="header__logo">
                        <img src="img/header/Logo.png" alt="Logo"> 
                     </div>
                     <div class="header__menu">
-                       Menu
-                    <img src="img/header/list.png" alt="list"> 
-                    </div>
+                        <label class="header__menu_label" for="toggle">Menu <i class="icofont-navigation-menu"></i></label>
+                        <input class="header__menu_checkbox" type="checkbox" id="toggle">    
+                        <ul type="none" class="header__menu_ul"> 
+                            <a href="#slider"><li>HOME</li></a>
+                            <a href="#service"><li>SERVICES</li></a>
+                            <a href="#team"><li>OUR TEAM</li></a>
+                            <a href="#end"><li>CONTACT</li></a>
+                        </ul>
+                    </div> 
+                </div>
             </div>
             <div class="title">
                 <div class="title__main">
@@ -50,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div id="service">
+    <div id="service" id="service">
         <div class="container">
             <div class="services">
                 <div class="services__boxes">
@@ -100,7 +107,7 @@
             </form>
         </div>
     </div>
-    <div class="team">
+    <div class="team" id="team">
         <div class="container">
             <div class="title-team">
                 <div class="title-team__main"> 
@@ -178,7 +185,7 @@
             </div>
         </div>
     </div>
-    <div class="end">
+    <div class="end" id="end">
         <div class="container">
             <div class="title-end">
                 <div class="title-end__main"> 

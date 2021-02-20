@@ -531,6 +531,26 @@ html {
   padding-bottom: 50px;
 }
 
+#toggle {
+  overflow: hidden;
+  cursor: pointer;
+}
+#toggle :checked ~ .header__menu-ul {
+  display: block;
+  font-size: 20px;
+  font-family: "Lato Bold";
+  font-weight: bold;
+  color: black;
+}
+
+#toggle:checked ~ .header__menu_ul {
+  opacity: 1;
+  font-size: 20px;
+  font-family: "Lato Bold";
+  font-weight: bold;
+  color: black;
+}
+
 .header {
   display: flex;
   padding-top: 7px;
@@ -541,6 +561,38 @@ html {
   font-size: 1rem;
   color: white;
   cursor: pointer;
+}
+.header__menu_label {
+  display: inline;
+  font-family: "oSans-reg";
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+.header__menu_ul {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-family: "oSans-reg";
+  text-decoration: none;
+  background-color: #3b434c;
+  box-shadow: 0 0 9px 1px black;
+  transition: 0.5s ease;
+}
+.header__menu_ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "oSans-semi";
+  font-size: 20px;
+}
+.header__menu_ul a:hover {
+  color: #f7600e;
+}
+.header__menu_checkbox {
+  position: absolute;
+  left: -9999px;
 }
 @media (min-width: 576px) {
   .header {
