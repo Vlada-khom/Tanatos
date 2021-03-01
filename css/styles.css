@@ -475,6 +475,39 @@
   }
 }
 
+.review {
+  background: linear-gradient(to top, rgba(69, 75, 83, 0.9), rgba(69, 75, 83, 0.9)), url(../img/clients/woman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clients {
+  padding: 100px 0;
+}
+.clients__photo {
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/clients/Avatar.png);
+  border-radius: 50%;
+  background-position: center;
+}
+.clients__text {
+  text-align: center;
+  margin: 45px 0;
+  font-family: "oSans-italic";
+  font-size: 1.5625rem;
+  color: white;
+}
+.clients__name {
+  text-align: center;
+  font-family: "oSans-semi";
+  font-size: 1.125rem;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -579,16 +612,20 @@ html {
   text-decoration: none;
   background-color: #3b434c;
   box-shadow: 0 0 9px 1px black;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 .header__menu_ul a {
   text-decoration: none;
   color: white;
   font-family: "oSans-semi";
   font-size: 20px;
+  padding: 10px 0;
 }
 .header__menu_ul a:hover {
   color: #f7600e;
+}
+.header__menu_ul li {
+  padding: 5px 0;
 }
 .header__menu_checkbox {
   position: absolute;

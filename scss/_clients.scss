@@ -1,0 +1,27 @@
+.review {
+    background: linear-gradient(to top, rgba(69, 75, 83, 0.9), rgba(69, 75, 83, 0.9)), url(../img/clients/woman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clients {  
+    padding: 100px 0;
+    &__photo {
+        margin: 0 auto;
+        width: 130px;
+        height: 130px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/clients/Avatar.png);
+        border-radius: 50%;
+        background-position: center;
+    }
+    &__text {
+        text-align: center;
+        margin: 45px 0;
+        @include font("oSans-italic", 25, white);
+    }
+    &__name {
+        text-align: center;
+        @include font("oSans-semi", 18, white);
+    }
+}

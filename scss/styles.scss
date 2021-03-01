@@ -3,6 +3,7 @@
 @import "_letter";
 @import "_team";
 @import "_form-footer";
+@import "_clients";
 
 * { box-sizing: border-box;}
 
@@ -90,7 +91,6 @@ html {
             color: white;
             cursor: pointer;
             width:100%;
-            
         }
         
         &_ul {
@@ -103,34 +103,32 @@ html {
             text-decoration: none;
             background-color: rgba($color: $t-grey, $alpha: 1.0);
             box-shadow: 0 0 9px 1px black;
-            transition: .5s ease;
+            transition: opacity .5s ease;
             a {
                 text-decoration: none;
                 color: white;
                 font-family: "oSans-semi";
                 font-size: 20px;
+                padding: 10px 0;
                 &:hover {
                     color: $orange;
                 }
             }
-            
+            li {
+                padding: 5px 0;
+            } 
         }
         &_checkbox {
             position: absolute;
             left: -9999px;
         }
-
     }
-
-
     @media (min-width: 576px) {
         padding-top: 15px;
     }
-
     @media (min-width: 768px) {
         padding-top: 20px;
     }
-
     @media (min-width: 992px) {
         padding-top: 40px; 
     }
@@ -140,12 +138,10 @@ html {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 60px;
-
     @media (min-width: 992px) {
         padding: 0 5px;
         margin-top: 160px;
     }
-
     &__main {
         &_white {
             @include font("oSana-bold", 30, white);
@@ -168,7 +164,6 @@ html {
             @include font("oSans-reg", 25, white);
         }
     }
-   
 }
 .slider-btn {
     text-align: center;
@@ -176,9 +171,7 @@ html {
     @media (min-width: 922px) {
         margin-bottom: 150px;
     }
-
 }
-
 .button {
     display: inline-block;
     width: 210px;
@@ -198,7 +191,6 @@ html {
         margin-top: 15px;
         @media (min-width:576px) {
             margin-left: 25px;
-
         }
     }
 }
@@ -210,9 +202,7 @@ html {
         transition: animation .3s;
         animation: down 3s linear forwards ;
         &:hover {
-            cursor: pointer;
-
-            
+            cursor: pointer;  
         }
     }
 }
